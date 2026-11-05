@@ -6,7 +6,15 @@ Este projeto é um site demonstrativo de leilões de animais de criação. A ide
 
 Usei o figma para criação inicial do site e para ter ideia de como iria funcionar o site, locais das imagens, utilizei IA para gerar as imagens, juntamente com os textos do site, após ter todo o site já desenhado como seria as quatro paginas comecei apenas a passar para o codigo, para revisão de semantica, utilizei o chatgpt para verificar.
 
-Cada página ficou em um arquivo separado para facilitar a organização. Utilizando a materia do Rafael sobre mmodularização para organização dos arquivos.
+Cada página ficou em um arquivo separado para facilitar a organização. Utilizando a materia do Rafael sobre modularização, para organização dos arquivos.
+
+## Integrantes da equipe
+
+Luiz Miguel
+Kaique
+Mario 
+Stephany 
+Ryan
 
 ## Organização dos arquivos
 
