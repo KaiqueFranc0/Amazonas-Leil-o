@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acesso demonstrativo e requisitos de habilitação das instituições.">
+  <title>Login | Amazonas Leilão</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="login">
+  <a class="pular" href="#conteudo">Pular para o conteúdo principal</a>
+  <header id="topo">
+    <a class="logo" href="index.html"><img src="../imagens/logo.jpg" alt="Amazonas Leilão, página inicial" width="176"></a>
+    <p>Destinação responsável. Cuidado e transparência.</p>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="login.html" aria-current="page">Login</a></li>
+        <li><a href="trabalhe-conosco.html">Trabalhe conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="conteudo" tabindex="-1">
+    <section class="painel-acesso">
+      <h1>Acesso institucional</h1>
+      <p>Área demonstrativa destinada a instituições previamente habilitadas. O acesso não é aberto à compra de animais por particulares.</p>
+      <p id="aviso-login">O formulário verifica os campos no navegador, sem autenticação ou armazenamento pela plataforma.</p>
+      <form action="login.html#demonstracao" method="get" aria-describedby="aviso-login">
+        <!-- Sem name: os valores digitados não são incluídos na URL desta demonstração. -->
+        <p>
+          <label for="email">E-mail</label>
+          <input id="email" type="email" autocomplete="email" required>
+        </p>
+        <p>
+          <label for="senha">Senha</label>
+          <input id="senha" type="password" autocomplete="current-password" required>
+        </p>
+        <button type="submit">Validar acesso demonstrativo</button>
+      </form>
+      <p id="demonstracao">Demonstração sem área autenticada, liberação de lances ou solicitação de recebimento de animais.</p>
+    </section>
+    <section>
+      <h2>Habilitação prévia obrigatória</h2>
+      <p>A participação é restrita a zoológicos, mantenedouros, criadouros e outras instituições regularizadas e compatíveis com o procedimento.</p>
+      <ul>
+        <li>Autorização ambiental válida e compatível com a espécie e a atividade.</li>
+        <li>Responsável técnico habilitado para acompanhar o manejo e os cuidados.</li>
+        <li>Recintos, infraestrutura e condições sanitárias adequados.</li>
+        <li>Documentação e condições de transporte exigidas para o caso.</li>
+        <li>Atendimento às regras do processo administrativo e, quando houver leilão, do edital.</li>
+      </ul>
+      <article>
+        <h3>Como funciona a análise</h3>
+        <p>A documentação e a capacidade de acolhimento são avaliadas antes da participação. Um cadastro ou login não substitui a autorização do órgão competente.</p>
+        <p>O arremate só se aplica aos lotes legalmente admitidos em leilão.</p>
+      </article>
+    </section>
+  </main>
+  <aside id="lateral" aria-labelledby="titulo-lateral">
+    <h2 id="titulo-lateral">Cuidado em todas as etapas</h2>
+    <img src="../imagens/penas-papagaio.jpg" alt="Detalhe da plumagem verde de um papagaio-verdadeiro, com pequenas áreas amarelas e azuis." width="280" loading="lazy">
+    <p>Bem-estar animal, rastreabilidade e habilitação orientam os procedimentos demonstrados.</p>
+    <a href="index.html">Consultar destinações e leilões demonstrativos</a>
+  </aside>
+  <footer id="rodape">
+    <p>&copy; 2026 Amazonas Leilão.</p>
+    <a href="#topo">Voltar ao topo</a>
+  </footer>
+</body>
+</html>
