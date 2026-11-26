@@ -10,11 +10,11 @@ Cada página ficou em um arquivo separado para facilitar a organização. Utiliz
 
 ## Organização dos arquivos
 
-- `index.html`: página inicial, com a apresentação do site e os lotes de animais.
-- `sobre.html`: explica a proposta do projeto, os princípios e a equipe fictícia.
-- `login.html`: apresenta o formulário de acesso demonstrativo.
-- `trabalhe-conosco.html`: mostra as vagas fictícias e a seção de candidatura.
-- `imagens/`: guarda as imagens retiradas do documento de referência.
+- `docs/index.html`: página inicial, com a apresentação do site e os lotes de animais.
+- `docs/sobre.html`: explica a proposta do projeto, os princípios e a equipe fictícia.
+- `docs/login.html`: apresenta o formulário de acesso demonstrativo.
+- `docs/trabalhe-conosco.html`: mostra as vagas fictícias e a seção de candidatura.
+- `docs/imagens/`: guarda as imagens retiradas do documento de referência.
 
 
 ## Como o HTML foi organizado
@@ -38,3 +38,14 @@ O login usa `required` para exigir o preenchimento dos campos e `type="email"` p
 ## Uso de IA
 
 Foi utilizada IA para ajudar na criação dos textos e também das imagens para desenvolver o projeto primeiramente no figma para não termos problemas com copyright com as imagens.
+
+## Publicar no GitHub Pages
+
+Os arquivos do site ficam em `docs/`, na raiz do repositorio. Os links relativos permitem publicar em https://kaiquefranc0.github.io/AmazonasLeilao/.
+
+1. No GitHub, acesse **Settings > Pages**.
+2. Em **Build and deployment**, selecione **Deploy from a branch**.
+3. Selecione a branch `tercerira-entrega` e a pasta `/docs`.
+4. Clique em **Save** e aguarde a publicacao.
+
+Para visualizar localmente, abra `docs/index.html` no navegador. O arquivo `docs/.nojekyll` dispensa o processamento pelo Jekyll.
