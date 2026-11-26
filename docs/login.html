@@ -3,49 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Amazonasleilao: conexões responsáveis, origens transparentes. Projeto demonstrativo de leilões de animais de criação.">
-  <title>Login | Amazonasleilao</title>
+  <meta name="description" content="Acesso demonstrativo e requisitos de habilitação das instituições.">
+  <title>Login | Amazonas Leilão</title>
+  <link rel="stylesheet" href="login.css">
 </head>
-<body>
-  <a href="#conteudo">Pular para o conteúdo principal</a>
-  <header>
-    <a href="index.html"><img src="imagens/logo.jpg" alt="Amazonasleilao · página inicial" width="176" loading="lazy"></a>
-    <nav aria-label="Navegação principal"><ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sobre.html">Sobre nós</a></li>
-      <li><a href="login.html" aria-current="page">Login</a></li>
-      <li><a href="trabalhe-conosco.html">Trabalhe conosco</a></li>
-</ul></nav>
+<body class="login">
+  <a class="pular" href="#conteudo">Pular para o conteúdo principal</a>
+  <header id="topo">
+    <a class="logo" href="index.html"><img src="imagens/logo.jpg" alt="Amazonas Leilão, página inicial" width="176"></a>
+    <p>Destinação responsável. Cuidado e transparência.</p>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="login.html" aria-current="page">Login</a></li>
+        <li><a href="trabalhe-conosco.html">Trabalhe conosco</a></li>
+      </ul>
+    </nav>
   </header>
   <main id="conteudo" tabindex="-1">
-    <section aria-labelledby="acesso"><p>Seu espaço</p><h1 id="acesso">Que bom ter você aqui.</h1><p>Entre na sua conta para acompanhar os leilões e os animais que despertaram seu interesse.</p>
+    <section class="painel-acesso">
+      <h1>Acesso institucional</h1>
+      <p>Área demonstrativa destinada a instituições previamente habilitadas. O acesso não é aberto à compra de animais por particulares.</p>
+      <p id="aviso-login">O formulário verifica os campos no navegador, sem autenticação ou armazenamento pela plataforma.</p>
       <form action="login.html#demonstracao" method="get" aria-describedby="aviso-login">
-        <p><label for="email">E-mail</label><br><input id="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required></p>
-        <p><label for="senha">Senha</label><br><input id="senha" type="password" autocomplete="current-password" placeholder="Digite sua senha" required></p>
-        <p><input id="lembrar" type="checkbox"><label for="lembrar">Lembrar de mim</label></p>
-        <p><a href="#recuperacao">Esqueci minha senha</a></p><button type="submit">Entrar na minha conta</button>
+        <!-- Sem name: os valores digitados não são incluídos na URL desta demonstração. -->
+        <p>
+          <label for="email">E-mail</label>
+          <input id="email" type="email" autocomplete="email" required>
+        </p>
+        <p>
+          <label for="senha">Senha</label>
+          <input id="senha" type="password" autocomplete="current-password" required>
+        </p>
+        <button type="submit">Validar acesso demonstrativo</button>
       </form>
-      <aside id="aviso-login" aria-label="Privacidade"><p>Seus dados merecem cuidado. Use apenas informações fictícias neste projeto demonstrativo.</p></aside>
-      <details id="recuperacao"><summary>Recuperação de senha</summary><p>O acesso · demonstrativo. Não há conta cadastrada nem envio de e-mail para recuperação de senha.</p></details>
-      <details id="demonstracao" open><summary>Acesso demonstrativo</summary><p>Este formulário valida os campos no navegador. Não realiza autenticação nem armazena dados.</p></details>
+      <p id="demonstracao">Demonstração sem área autenticada, liberação de lances ou solicitação de recebimento de animais.</p>
     </section>
-    <section aria-labelledby="cuidado"><h2 id="cuidado">O extraordinário começa no cuidado.</h2><p>Cada detalhe tem uma origem.</p>
-      <img src="imagens/penas-pavao.jpg" alt="Detalhe das penas de um pavão, com desenhos em tons de azul e verde." width="480" loading="lazy">
-      <p>Entre para acompanhar sua seleção e conhecer cada história com mais clareza.</p><p>Origem transparente. Escolhas responsáveis.</p>
-      <article><h3>Primeira vez por aqui?</h3><p>Explore os leilões e conheça nossa proposta antes de participar.</p><a href="index.html">Voltar para a Home</a></article>
+    <section>
+      <h2>Habilitação prévia obrigatória</h2>
+      <p>A participação é restrita a zoológicos, mantenedouros, criadouros e outras instituições regularizadas e compatíveis com o procedimento.</p>
+      <ul>
+        <li>Autorização ambiental válida e compatível com a espécie e a atividade.</li>
+        <li>Responsável técnico habilitado para acompanhar o manejo e os cuidados.</li>
+        <li>Recintos, infraestrutura e condições sanitárias adequados.</li>
+        <li>Documentação e condições de transporte exigidas para o caso.</li>
+        <li>Atendimento às regras do processo administrativo e, quando houver leilão, do edital.</li>
+      </ul>
+      <article>
+        <h3>Como funciona a análise</h3>
+        <p>A documentação e a capacidade de acolhimento são avaliadas antes da participação. Um cadastro ou login não substitui a autorização do órgão competente.</p>
+        <p>O arremate só se aplica aos lotes legalmente admitidos em leilão.</p>
+      </article>
     </section>
   </main>
-  <footer>
-    <p><a href="index.html">amazonasleilao</a></p>
-    <p>Conexões responsáveis. Origens transparentes. Um novo olhar para cada escolha.</p>
-    <nav aria-label="Navegação do rodapé"><ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sobre.html">Sobre nós</a></li>
-      <li><a href="login.html" aria-current="page">Login</a></li>
-      <li><a href="trabalhe-conosco.html">Trabalhe conosco</a></li>
-</ul></nav>
-    <p><small>&copy; 2026 amazonasleilao · Projeto demonstrativo</small></p>
-    <p><small>Animais, equipes e ofertas fictícios. Não realizamos transações.</small></p>
+  <aside id="lateral" aria-labelledby="titulo-lateral">
+    <h2 id="titulo-lateral">Cuidado em todas as etapas</h2>
+    <img src="imagens/penas-papagaio.jpg" alt="Detalhe da plumagem verde de um papagaio-verdadeiro, com pequenas áreas amarelas e azuis." width="280" loading="lazy">
+    <p>Bem-estar animal, rastreabilidade e habilitação orientam os procedimentos demonstrados.</p>
+    <a href="index.html">Consultar destinações e leilões demonstrativos</a>
+  </aside>
+  <footer id="rodape">
+    <p>&copy; 2026 Amazonas Leilão.</p>
+    <a href="#topo">Voltar ao topo</a>
   </footer>
 </body>
 </html>
